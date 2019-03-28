@@ -1,0 +1,18 @@
+{
+    "name": "elven-scout-webgl-opengl-engines",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.client.json",
+        "specs": "tsc -p tsconfig.specs.json",
+        "all": "npm run build && npm run specs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/jasmine": "^3.3.12",
+        "@types/requirejs": "^2.1.31"
+    }
+}

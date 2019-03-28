@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es5",
+        "sourceMap": true,
+        "outDir": "dist_specs"
+    },
+    "files": [
+        "src_specs/RequireConfigSpecRunner.ts",
+        "src_specs/Game.spec.ts",
+        "src_client/Game.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src_client"
+    ]
+}
