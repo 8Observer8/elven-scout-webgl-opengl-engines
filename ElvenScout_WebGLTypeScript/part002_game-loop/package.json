@@ -1,0 +1,30 @@
+{
+    "name": "elven-scout-webgl-opengl-engines",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "compile-amd-client": "tsc -p tsconfig.amd.client.json",
+        "compile-amd-specs": "tsc -p tsconfig.amd.specs.json",
+        "compile-amd-all": "npm run compile-amd-client && npm run compile-amd-specs",
+
+        "compile-client": "tsc -p tsconfig.bundle.client.json",
+        "bundle-client": "npm run compile-client && browserify dist_client/Program.js -o dist_client/bundle.client.js",
+        "uglify-client": "uglifyjs dist_client/bundle.client.js -o dist_client/bundle.client.min.js",
+        "release-client": "npm run bundle-client && npm run uglify-client",
+
+        "compile-specs": "tsc -p tsconfig.bundle.specs.json",
+        "bundle-specs": "npm run compile-specs && browserify dist_specs/src_specs/Game.spec.js -o dist_specs/bundle.specs.js",
+        "uglify-specs": "uglifyjs dist_specs/bundle.specs.js -o dist_specs/bundle.specs.min.js",
+        "release-specs": "npm run bundle-specs && npm run uglify-specs",
+ 
+        "release-all": "npm run release-client && npm run release-specs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/jasmine": "^3.3.12",
+        "@types/requirejs": "^2.1.31"
+    }
+}

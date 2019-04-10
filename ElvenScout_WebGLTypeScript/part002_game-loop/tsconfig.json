@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "types": ["requirejs", "jasmine"],
+        "target": "es5"
+    }
+}

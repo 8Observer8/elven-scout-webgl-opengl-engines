@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "sourceMap": false,
+        "outDir": "dist_client"
+    },
+    "include": [
+        "src_client"
+    ],
+    "exclude": [
+        "node_modules",
+        "src_specs"
+    ]
+}
